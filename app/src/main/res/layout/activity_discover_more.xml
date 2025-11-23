@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="162dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="16dp"
+            android:text="Discover More"
+            android:textColor="@color/purple_text_dark"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="617dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:padding="8dp"
+            android:rowCount="3"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <!-- InspireCamps -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnCamp"
+                    android:layout_width="171dp"
+                    android:layout_height="169dp"
+                    android:background="@drawable/rounded_button"
+                    android:contentDescription="InspireCamps"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_camp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:text="InspireCamps"
+                    android:textColor="@color/purple_text_dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- SkillBuilders -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnWorkshop"
+                    android:layout_width="168dp"
+                    android:layout_height="166dp"
+                    android:background="@drawable/rounded_button"
+                    android:contentDescription="SkillBuilders"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_workshop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:text="SkillBuilders"
+                    android:textColor="@color/purple_text_dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Visionary Talks -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnSeminar"
+                    android:layout_width="171dp"
+                    android:layout_height="159dp"
+                    android:background="@drawable/rounded_button"
+                    android:contentDescription="Visionary Talks"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_seminar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:text="Visionary Talks"
+                    android:textColor="@color/purple_text_dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- TechThrive -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnTech"
+                    android:layout_width="168dp"
+                    android:layout_height="169dp"
+                    android:background="@drawable/rounded_button"
+                    android:contentDescription="TechThrive"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_tech" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:text="TechThrive"
+                    android:textColor="@color/purple_text_dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- CompeteX -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnCompetition"
+                    android:layout_width="171dp"
+                    android:layout_height="179dp"
+                    android:background="@drawable/rounded_button"
+                    android:contentDescription="CompeteX"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_competition" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:text="CompeteX"
+                    android:textColor="@color/purple_text_dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- ShowcaseSphere -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnExhibition"
+                    android:layout_width="170dp"
+                    android:layout_height="174dp"
+                    android:background="@drawable/rounded_button"
+                    android:contentDescription="ShowcaseSphere"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_exhibition" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:text="ShowcaseSphere"
+                    android:textColor="@color/purple_text_dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

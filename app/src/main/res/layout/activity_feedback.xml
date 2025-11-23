@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollFeedbackRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/feedbackFormRoot"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#4A148C"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Recreate every question EXACT as in your feedbackform.xml
+             but for each EditText put mic ImageButton to the right.
+             IDs remain the same so your existing code references will still work.
+        -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How satisfied are you with the app overall? (⭐1–5) *"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etOverallSatisfaction"
+                android:hint="Enter your rating (1-5)"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/mic_etOverallSatisfaction"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speak rating"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Easy to use -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Was the app easy to use and navigate? (Yes/No) *"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etEasyToUse"
+                android:hint="Yes / No"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/mic_etEasyToUse"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speak easy to use"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Expectations -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Did the app meet your expectations? (Yes/No) *"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etExpectations"
+                android:hint="Yes / No"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/mic_etExpectations"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speak expectations"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Most useful feature -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which feature do you find the most useful?"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etMostUsefulFeature"
+                android:hint="Type here..."
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/mic_etMostUsefulFeature"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speak feature"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Missing feature -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Is there any feature you think is missing?"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etMissingFeature"
+                android:hint="Type here..."
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/mic_etMissingFeature"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speak missing feature"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Speed performance -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How would you rate the app’s speed and performance? (⭐1–5)"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etSpeedPerformance"
+                android:hint="Enter your rating (1-5)"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/mic_etSpeedPerformance"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speak speed rating"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Design appearance -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How would you rate the app’s design and appearance? (⭐1–5)"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etDesignAppearance"
+                android:hint="Enter your rating (1-5)"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/mic_etDesignAppearance"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speak design rating"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Easy to find -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Was it easy to find what you were looking for? (Yes/No)"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etEasyFind"
+                android:hint="Yes / No"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/mic_etEasyFind"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speak easy find"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Recommend (NPS) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How likely are you to recommend this app to others? (⭐1–10)"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etRecommendApp"
+                android:hint="Enter your rating (1-10)"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/mic_etRecommendApp"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speak recommend"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Usage frequency -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How often do you think you’ll use this app? (Daily / Weekly / Rarely)"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etUsageFrequency"
+                android:hint="Daily / Weekly / Rarely"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/mic_etUsageFrequency"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speak usage frequency"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Improve -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What’s the thing you’d like us to improve?"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etImprove"
+                android:hint="Type here..."
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/mic_etImprove"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speak improve"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Other suggestions -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do you have any other suggestions or comments?"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/etOtherSuggestions"
+                android:hint="Type here..."
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/mic_etOtherSuggestions"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speak other suggestions"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Submit button -->
+        <Button
+            android:id="@+id/btnSubmitFeedbackForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="#6A1B9A"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>

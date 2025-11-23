@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bodypositivity"
+            android:icon="@drawable/ic_heart"
+            android:title="Body Positivity" />
+
+        <item
+            android:id="@+id/nav_books"
+            android:icon="@drawable/ic_book_placeholder"
+            android:title="HerVerse" />
+
+        <item
+            android:id="@+id/nav_mitra"
+            android:icon="@drawable/chatroom"
+            android:title="Mitra Mandal Chatroom" />
+        <item
+            android:id="@+id/nav_mood_graph"
+            android:icon="@drawable/ic_mood_chart"
+            android:title="Mood vs Cycle" />
+        <item
+            android:id="@+id/nav_naripicks"
+            android:icon="@drawable/ic_shopping"
+            android:title="Nari Picks" />
+        <item
+            android:id="@+id/nav_foods"
+            android:icon="@drawable/ic_food_placeholder"
+            android:title="NutriNest" />
+
+        <item
+            android:id="@+id/nav_pms_diary"
+            android:icon="@drawable/ic_diary"
+            android:title="PMS Diary" />
+        <item
+            android:id="@+id/nav_swasthya"
+            android:icon="@drawable/ic_stethoscope"
+            android:title="Swasthya Health Guide" />
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@android:drawable/ic_menu_call"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_discover"
+                android:icon="@drawable/ic_discover"
+                android:title="Discover More" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="Feedback"/>
+            <item
+                android:id="@+id/nav_helpline"
+                android:icon="@drawable/ic_phone"
+                android:title="Helpline Numbers" />
+        </menu>
+    </item>
+</menu>

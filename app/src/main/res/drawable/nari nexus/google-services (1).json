@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "505323165958",
+    "project_id": "narinexusapp",
+    "storage_bucket": "narinexusapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505323165958:android:9ec79e2ec7f0e061876687",
+        "android_client_info": {
+          "package_name": "com.example.narinexus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1I5__hyk9Eo51cczXOTxOoNGYEoR7_H8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

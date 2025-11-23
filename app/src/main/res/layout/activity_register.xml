@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register to Nari Nexus"
+            android:textColor="#6A1B9A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            card_view:cardBackgroundColor="#FFFFFF"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- First and Last Name -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/etFirst"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="First Name"
+                        android:background="@drawable/edittext_purple_border"
+                        android:textColor="#000000"
+                        android:textColorHint="#888888"
+                        android:padding="12dp"
+                        android:layout_marginEnd="8dp" />
+
+                    <EditText
+                        android:id="@+id/etLast"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="Last Name"
+                        android:background="@drawable/edittext_purple_border"
+                        android:textColor="#000000"
+                        android:textColorHint="#888888"
+                        android:padding="12dp"
+                        android:layout_marginStart="8dp" />
+                </LinearLayout>
+
+                <!-- Date of Birth -->
+                <EditText
+                    android:id="@+id/edob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Age"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:drawablePadding="8dp"
+                    android:background="@drawable/edittext_purple_border"
+                    android:textColor="#000000"
+                    android:textColorHint="#888888"
+                    android:padding="12dp"
+                    android:layout_marginTop="12dp" />
+
+                <!-- Country Code + Phone -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:weightSum="3">
+
+                    <Spinner
+                        android:id="@+id/spinnerCC"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/country_codes"
+                        android:spinnerMode="dropdown" />
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:hint="Phone Number"
+                        android:inputType="phone"
+                        android:background="@drawable/edittext_purple_border"
+                        android:textColor="#000000"
+                        android:textColorHint="#888888"
+                        android:padding="12dp"
+                        android:layout_marginStart="8dp" />
+                </LinearLayout>
+
+                <!-- Email -->
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/edittext_purple_border"
+                    android:textColor="#000000"
+                    android:textColorHint="#888888"
+                    android:padding="12dp"
+                    android:layout_marginTop="12dp" />
+
+                <!-- Username -->
+                <EditText
+                    android:id="@+id/etUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:background="@drawable/edittext_purple_border"
+                    android:textColor="#000000"
+                    android:textColorHint="#888888"
+                    android:padding="12dp"
+                    android:layout_marginTop="12dp" />
+
+                <!-- Password -->
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edittext_purple_border"
+                    android:textColor="#000000"
+                    android:textColorHint="#888888"
+                    android:padding="12dp"
+                    android:layout_marginTop="12dp" />
+
+                <!-- Verification Method -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify via email or phone number?"
+                    android:textColor="#6A1B9A"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgVerif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <RadioButton
+                        android:id="@+id/rbEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email" />
+
+                    <RadioButton
+                        android:id="@+id/rbPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:layout_marginStart="24dp" />
+                </RadioGroup>
+
+                <!-- OTP -->
+                <EditText
+                    android:id="@+id/etOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter OTP"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_purple_border"
+                    android:textColor="#000000"
+                    android:textColorHint="#888888"
+                    android:padding="12dp"
+                    android:layout_marginTop="12dp" />
+
+                <!-- Register Button -->
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#6A1B9A"
+                    android:layout_marginTop="20dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

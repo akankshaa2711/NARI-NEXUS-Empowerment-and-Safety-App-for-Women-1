@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="#F3E5F5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="#E1BEE7"
+            android:fontFamily="serif"
+            android:padding="8dp"
+            android:text="SHOP BY CATEGORY"
+            android:textColor="#6A1B9A"
+            android:textSize="28sp" />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:rowCount="6"
+            android:columnCount="2"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+
+
+            <!-- Product 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/padsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="Sanitary Pads"
+                    android:src="@drawable/ic_pads"
+                    android:background="@null"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sanitary Pads"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/medicineButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="Daily Medicines"
+                    android:src="@drawable/ic_medicines"
+                    android:background="@null"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Medicines"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageButton
+                    android:id="@+id/pregnancyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_pregnancy"
+                    android:contentDescription="Pregnancy Essentials"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pregnancy Essentials"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageButton
+                    android:id="@+id/mentalWellnessButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_mental_wellness"
+                    android:contentDescription="Mental Wellness Books"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mental Wellness Books"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageButton
+                    android:id="@+id/homeSafetyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_home_safety"
+                    android:contentDescription="Home Safety Products"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home Safety Products"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageButton
+                    android:id="@+id/selfcareButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_selfcare"
+                    android:contentDescription="Self-care"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Self-Care Products"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageButton
+                    android:id="@+id/fitnessButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_fitness"
+                    android:contentDescription="Fitness"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fitness"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageButton
+                    android:id="@+id/pregnancyDressButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_pregnancy_dress"
+                    android:contentDescription="Pregnancy Dresses"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pregnancy Dresses"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageButton
+                    android:id="@+id/indianDressButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_indian_dress"
+                    android:contentDescription="Indian Dresses"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indian Dresses"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageButton
+                    android:id="@+id/jewelleryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="Jewellery"
+                    android:src="@drawable/ic_jewellery"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jewellery"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageButton
+                    android:id="@+id/womenEntrepreneursButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_women_entrepreneurs"
+                    android:contentDescription="Women Entrepreneurs Books"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Women Entrepreneurs Books"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageButton
+                    android:id="@+id/westernDressButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_western_dress"
+                    android:contentDescription="Western Dresses"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Western Dresses"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

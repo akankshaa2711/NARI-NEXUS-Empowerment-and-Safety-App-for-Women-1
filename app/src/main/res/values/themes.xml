@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base theme using Material 3 -->
+    <style name="Base.Theme.NariNexus" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#6A1B9A</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#E1BEE7</item>
+
+        <item name="colorSecondary">#F3E5F5</item>
+        <item name="colorOnSecondary">#6A1B9A</item>
+
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#6A1B9A</item>
+
+        <item name="android:statusBarColor">#6A1B9A</item>
+        <item name="android:navigationBarColor">#E1BEE7</item>
+    </style>
+
+    <style name="Theme.NariNexus" parent="Base.Theme.NariNexus" />
+
+    <!-- Popup Menu Styling -->
+    <style name="NariMenuPopup" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:popupBackground">#F3E5F5</item>
+        <item name="android:textColor">#6A1B9A</item>
+    </style>
+
+</resources>

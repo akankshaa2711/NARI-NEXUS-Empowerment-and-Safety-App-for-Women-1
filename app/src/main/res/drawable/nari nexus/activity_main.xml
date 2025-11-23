@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#752B99"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/NariMenuPopup"
+            app:title="Nari Nexus"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:titleTextColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="By Her. For Her. With Her."
+            android:textColor="#CE8217"
+            android:textSize="16sp"
+            android:textStyle="italic|bold" />
+
+        <GridLayout
+            android:id="@+id/featureGrid"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:alignmentMode="alignBounds"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/btnSwasthya"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:text="🩺 Swasthya\nHealth Guide"
+                android:textAlignment="center"
+                android:textColor="#1D042C" />
+
+            <Button
+                android:id="@+id/btnMitraMandal"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:text="💬 Mitra Mandal\nChat Room"
+                android:textAlignment="center"
+                android:textColor="#1D042C" />
+
+            <Button
+                android:id="@+id/btnNariPicks"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:text="🛍️ Nari Picks\nProduct Recos"
+                android:textAlignment="center"
+                android:textColor="#1D042C" />
+
+            <Button
+                android:id="@+id/btnNewFeature"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:text="✨ Body Positivity"
+                android:textAlignment="center"
+                android:textColor="#1D042C" />
+        </GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motivational Corner"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="8dp"
+            android:textColor="#6A1B9A" />
+
+        <ImageButton
+            android:id="@+id/imgBtnMotivation"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="#F3E5F5"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:layout_margin="20dp"
+            android:src="@drawable/motivational" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:text="📞 Helpline Numbers"
+                android:textColor="#1D042C"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="329dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="🔍 Discover More"
+                android:textColor="#1D042C"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

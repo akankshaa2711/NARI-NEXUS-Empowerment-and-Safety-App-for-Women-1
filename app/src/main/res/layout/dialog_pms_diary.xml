@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pms_dialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="PMS Symptom Diary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- PMS Date -->
+        <TextView android:text="PMS Date:" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/etDiaryDate"
+            android:hint="DD/MM/YYYY"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:padding="12dp"
+            android:background="?android:attr/editTextBackground" />
+
+        <!-- Symptoms with mic -->
+        <TextView android:text="Symptoms (Physical and Emotional):" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginTop="4dp">
+            <EditText
+                android:id="@+id/etSymptoms"
+                android:hint="E.g., Bloating, Anxiety..."
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="56dp"
+                android:padding="12dp"
+                android:background="?android:attr/editTextBackground" />
+            <ImageButton
+                android:id="@+id/btnMic"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Record symptoms"
+                android:src="@drawable/ic_mic"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Severity spinner -->
+        <TextView android:text="Severity:" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <Spinner android:id="@+id/spinnerSeverity" android:layout_width="match_parent" android:layout_height="56dp" android:padding="8dp" />
+
+        <!-- Period start/end -->
+        <TextView android:text="Start Date of Period:" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/etStartDate"
+            android:hint="DD/MM/YYYY"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:padding="12dp"
+            android:background="?android:attr/editTextBackground" />
+
+        <TextView android:text="End Date of Period:" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/etEndDate"
+            android:hint="DD/MM/YYYY"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:padding="12dp"
+            android:background="?android:attr/editTextBackground" />
+
+        <!-- NEW: How I'm feeling (click opens full editor) -->
+        <TextView android:text="How I'm feeling:"
+                  android:layout_marginTop="8dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/etFeelingShort"
+            android:hint="Tap to write more..."
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:padding="12dp"
+            android:background="?android:attr/editTextBackground" />
+
+        <TextView android:text="Other Relevant Info:" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/etOtherInfo"
+            android:hint="Stress, Diet, Sleep etc."
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="12dp"
+            android:background="?android:attr/editTextBackground" />
+
+        <!-- Save / Cancel provided by AlertDialog -->
+    </LinearLayout>
+</ScrollView>

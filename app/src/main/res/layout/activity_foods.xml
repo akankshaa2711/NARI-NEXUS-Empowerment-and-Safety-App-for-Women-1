@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/foods_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="?android:colorBackground">
+
+    <TextView
+        android:id="@+id/tvFoodsHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Healthy Foods"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:paddingBottom="6dp"
+        android:textColor="#4A148C"/>
+
+    <TextView
+        android:id="@+id/tvFoodsSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quick nutritious options and how to make them at home"
+        android:textSize="13sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFoods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"/>
+
+    <Button
+        android:id="@+id/btnSearchMore"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="🔎 Search more healthy foods"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#6A1B9A"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Nari Nexus"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/aim_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Aim"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:id="@+id/aim_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+Nari Nexus is built to support and empower women through practical health guidance, community support and helpful tools — all in one place. We aim to make health tracking, self-care and access to resources simple, private and friendly.
+"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/why_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Why this app?"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:id="@+id/why_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+Many health tools are fragmented, complicated, or not made with women's lived experiences in mind. Nari Nexus combines cycle care (PMS diary), wellbeing tips, helpful contacts and community features designed to be caring, private and non-judgmental.
+"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/how_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How it works"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:id="@+id/how_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+• Log PMS symptoms quickly with voice or text \n
+• Save private diary entries locally (and optionally to Firestore) \n
+• Use the drawer to access all features without cluttering the home screen \n
+• Get tailored tips based on where you are in your cycle \n
+"
+            android:paddingBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Meet the team -->
+        <TextView
+            android:id="@+id/team_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meet the Developers Team"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/team_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(Tap avatars to replace with photos later)"
+            android:textSize="12sp"
+            android:paddingBottom="12dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:useDefaultMargins="true">
+
+            <!-- Dev 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/dev1_img"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/ic_profile"
+                    android:contentDescription="dev1"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AKanksha Rani"
+                    android:textStyle="bold"
+                    android:paddingTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Final year BCA student at Lovely Professional University."
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingTop="4dp" />
+
+            </LinearLayout>
+
+            <!-- Dev 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/dev2_img"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/ic_profile"
+                    android:contentDescription="dev2"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yash Vishwakarma"
+                    android:textStyle="bold"
+                    android:paddingTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Third year B.Tech CSE student at Lovely Professional University."
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingTop="4dp" />
+
+            </LinearLayout>
+
+            <!-- Dev 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/dev3_img"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/ic_profile"
+                    android:contentDescription="dev3"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abhishek patel"
+                    android:textStyle="bold"
+                    android:paddingTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Third year B.Tech CSE student at Lovely Professional University."
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingTop="4dp" />
+
+            </LinearLayout>
+
+            <!-- Dev 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/dev4_img"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/ic_profile"
+                    android:contentDescription="dev4"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adarsh kamal"
+                    android:textStyle="bold"
+                    android:paddingTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Third year B.Tech CSE student at Lovely Professional University."
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:paddingTop="4dp" />
+
+            </LinearLayout>
+
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+    </LinearLayout>
+</ScrollView>

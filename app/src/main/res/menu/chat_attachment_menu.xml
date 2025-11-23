@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_doc" android:title="Document"/>
+    <item android:id="@+id/menu_photo" android:title="Photos and videos"/>
+    <item android:id="@+id/menu_camera" android:title="Camera"/>
+    <item android:id="@+id/menu_audio" android:title="Audio"/>
+</menu>

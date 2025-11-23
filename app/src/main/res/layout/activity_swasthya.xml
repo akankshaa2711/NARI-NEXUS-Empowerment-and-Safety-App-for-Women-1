@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swasthyaRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighter_purple">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollViewSwasthya"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Title and Health Quote -->
+            <TextView
+                android:id="@+id/tvSwasthyaTitle"
+                android:text="Swasthya Health Guide"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="4dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/tvHealthQuote"
+                android:text="(A woman’s health is her capital)"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="@color/purple_text_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Menstrual Wellness Section -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layoutMenstrualHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:src="@drawable/ic_menst"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:id="@+id/tvMenstrualTitle"
+                            android:text="Menstrual Wellness ▼"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutMenstrualContent"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btnPeriodTracker"
+                            android:text="Track Your Period Cycle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" />
+
+                        <Button
+                            android:id="@+id/btnPMSLogger"
+                            android:text="Log PMS Symptoms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" />
+
+
+                        <Button
+                            android:id="@+id/btnDailyTips"
+                            android:text="Daily Tips ▼"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutDailyTipsContent"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:id="@+id/tvDailyTips"
+                                android:text="Tips will appear here"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Pregnancy & Fertility -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layoutPregnancyHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:src="@drawable/ic_preg"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:id="@+id/tvPregnancyTitle"
+                            android:text="Pregnancy and Fertility ▼"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutPregnancyContent"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btnPregnancyMilestones"
+                            android:text="Pregnancy Milestones"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" />
+
+                        <Button
+                            android:id="@+id/btnDietChart"
+                            android:text="Indian Diet Chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" />
+
+
+                        <Button
+                            android:id="@+id/btnFetalFacts"
+                            android:text="Fetal Development Facts ▼"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutFetalFactsContent"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:text="General Fetal Development Facts:-"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp" />
+
+                            <TextView
+                                android:id="@+id/btnFetalFact1"
+                                android:text="7 Fascinating Fetal Facts That Will Blow Your Mind"
+                                android:backgroundTint="@color/button_contact_bg"
+                                android:padding="8dp"
+                                android:textColor="@android:color/white"
+                                android:background="@drawable/text_button_bg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:clickable="true"
+                                android:focusable="true" />
+
+                            <TextView
+                                android:id="@+id/btnFetalFact2"
+                                android:text="How Your Baby Grows Month 1"
+                                android:backgroundTint="@color/button_contact_bg"
+                                android:padding="8dp"
+                                android:textColor="@android:color/white"
+                                android:background="@drawable/text_button_bg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:clickable="true"
+                                android:focusable="true" />
+
+                            <TextView
+                                android:id="@+id/btnFetalFact3"
+                                android:text="Pregnancy: The First Trimester"
+                                android:backgroundTint="@color/button_contact_bg"
+                                android:padding="8dp"
+                                android:textColor="@android:color/white"
+                                android:background="@drawable/text_button_bg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:clickable="true"
+                                android:focusable="true" />
+
+                            <TextView
+                                android:id="@+id/btnFetalFact4"
+                                android:text="Life Before Birth - In the Womb"
+                                android:backgroundTint="@color/button_contact_bg"
+                                android:padding="8dp"
+                                android:textColor="@android:color/white"
+                                android:background="@drawable/text_button_bg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:clickable="true"
+                                android:focusable="true" />
+
+                            <TextView
+                                android:id="@+id/btnFetalFact5"
+                                android:text="9 Months In The Womb: A Remarkable Look At Fetal Development"
+                                android:backgroundTint="@color/button_contact_bg"
+                                android:padding="8dp"
+                                android:textColor="@android:color/white"
+                                android:background="@drawable/text_button_bg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:clickable="true"
+                                android:focusable="true" />
+                            <TextView
+                                android:id="@+id/btnFetalFact6"
+                                android:text="Pregnancy: The Second Trimester"
+                                android:backgroundTint="@color/button_contact_bg"
+                                android:padding="8dp"
+                                android:textColor="@android:color/white"
+                                android:background="@drawable/text_button_bg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:clickable="true"
+                                android:focusable="true" />
+                            <TextView
+                                android:id="@+id/btnFetalFact7"
+                                android:text="Pregnancy: The Third Trimester"
+                                android:backgroundTint="@color/button_contact_bg"
+                                android:padding="8dp"
+                                android:textColor="@android:color/white"
+                                android:background="@drawable/text_button_bg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:clickable="true"
+                                android:focusable="true" />
+                        </LinearLayout>
+                        <Button
+                            android:id="@+id/btnFertilityTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Check your Fertility window ▼"
+                            android:layout_marginTop="8dp" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutFertilityContent"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:id="@+id/tvFertilityResult"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="16sp"
+                                android:layout_marginTop="8dp"/>
+                        </LinearLayout>
+
+
+                        <Button
+                            android:id="@+id/btnMentalCheckIn"
+                            android:text="Check Your Mental Wellness "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Body & Mental Health -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layoutBodyHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:src="@drawable/ic_body"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:id="@+id/tvBodyTitle"
+                            android:text="Body and Mental Health ▼"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutBodyContent"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btnMotivation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Get Daily Motivation" />
+
+
+                        <Button
+                            android:id="@+id/btnSelfCareToggle"
+                            android:text="Self-Care Habit Tracker ▼"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutHabitContent"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <CheckBox
+                                android:id="@+id/checkWater"
+                                android:text="Drank enough water"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <CheckBox
+                                android:id="@+id/checkFood"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ate healthy food" />
+                            <CheckBox
+                                android:id="@+id/checkExercise"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Did light exercise or stretching?" />
+
+                            <CheckBox
+                                android:id="@+id/checkMovement"
+                                android:text="30 minutes of movement"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <CheckBox
+                                android:id="@+id/checkAffirmations"
+                                android:text="Practiced positive affirmations"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <CheckBox
+                                android:id="@+id/checkRelax"
+                                android:text="Took time to relax"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <CheckBox
+                                android:id="@+id/checkEmotionalCare"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Spent time with loved ones " />
+                            <CheckBox
+                                android:id="@+id/checkNatureTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Spent Time in Nature " />
+                            <CheckBox
+                                android:id="@+id/checkMeditation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Did Practices like deep breathing, meditation, or mindfulness " />
+
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnBreathing"
+                            android:text="Start Breathing Exercise"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" />
+
+                        <Button
+                            android:id="@+id/btnSelfCareReminder"
+                            android:text="Set Self-Care Reminder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:text="👩‍⚕️ Doctor's Tip"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <ViewFlipper
+                android:id="@+id/viewFlipperTips"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:autoStart="true"
+                android:flipInterval="4000"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:src="@drawable/tip5"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:src="@drawable/tip2"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:src="@drawable/tip3"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:src="@drawable/tip4"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:src="@drawable/tip1"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:src="@drawable/tip6"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </ViewFlipper>
+            <LinearLayout
+                android:id="@+id/layoutHealthFacts"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_button_bg"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:id="@+id/tvFactsHeading"
+                    android:text="💡 Health Fun Facts"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvFactBodyMental"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="@color/purple_text_dark"
+                    android:background="@color/white"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp" />
+
+                <TextView
+                    android:id="@+id/tvFactMenstrual"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="@color/purple_text_dark"
+                    android:background="@color/white"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp" />
+
+                <TextView
+                    android:id="@+id/tvFactPregnancy"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="@color/purple_text_dark"
+                    android:background="@color/white"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inspiring Reads for Every Woman"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#4A148C"
+        android:gravity="center"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore empowering stories and insightful guides on women’s health, growth, and strength."
+        android:textSize="14sp"
+        android:textColor="#555"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerBooks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btnMoreBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📖 Read More Books"
+        android:backgroundTint="#6A1B9A"
+        android:textColor="#FFF"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>

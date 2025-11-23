@@ -1,0 +1,67 @@
+<resources>
+    <string-array name="country_codes">
+        <item>+1 United States</item>
+        <item>+44 United Kingdom</item>
+        <item>+91 India</item>
+        <item>+61 Australia</item>
+        <item>+81 Japan</item>
+        <item>+49 Germany</item>
+        <item>+33 France</item>
+        <item>+39 Italy</item>
+        <item>+86 China</item>
+        <item>+7 Russia</item>
+        <item>+971 United Arab Emirates</item>
+        <item>+966 Saudi Arabia</item>
+        <item>+92 Pakistan</item>
+        <item>+880 Bangladesh</item>
+        <item>+94 Sri Lanka</item>
+        <item>+977 Nepal</item>
+        <item>+27 South Africa</item>
+        <item>+55 Brazil</item>
+        <item>+34 Spain</item>
+        <item>+47 Norway</item>
+        <item>+46 Sweden</item>
+        <item>+45 Denmark</item>
+        <item>+41 Switzerland</item>
+        <item>+52 Mexico</item>
+        <item>+351 Portugal</item>
+        <item>+65 Singapore</item>
+        <item>+82 South Korea</item>
+        <item>+60 Malaysia</item>
+        <item>+66 Thailand</item>
+        <item>+62 Indonesia</item>
+        <item>+84 Vietnam</item>
+        <item>+31 Netherlands</item>
+        <item>+32 Belgium</item>
+        <item>+420 Czech Republic</item>
+        <item>+48 Poland</item>
+        <item>+373 Moldova</item>
+        <item>+90 Turkey</item>
+        <item>+20 Egypt</item>
+        <item>+964 Iraq</item>
+        <item>+98 Iran</item>
+        <item>+598 Uruguay</item>
+        <item>+505 Nicaragua</item>
+        <item>+591 Bolivia</item>
+        <item>+58 Venezuela</item>
+        <item>+593 Ecuador</item>
+        <item>+51 Peru</item>
+        <item>+57 Colombia</item>
+        <item>+54 Argentina</item>
+        <item>+63 Philippines</item>
+        <item>+353 Ireland</item>
+        <item>+43 Austria</item>
+        <item>+372 Estonia</item>
+        <item>+371 Latvia</item>
+        <item>+370 Lithuania</item>
+        <item>+386 Slovenia</item>
+        <item>+385 Croatia</item>
+        <item>+382 Montenegro</item>
+        <item>+381 Serbia</item>
+        <item>+212 Morocco</item>
+        <item>+254 Kenya</item>
+        <item>+256 Uganda</item>
+        <item>+234 Nigeria</item>
+        <item>+250 Rwanda</item>
+    </string-array>
+</resources>

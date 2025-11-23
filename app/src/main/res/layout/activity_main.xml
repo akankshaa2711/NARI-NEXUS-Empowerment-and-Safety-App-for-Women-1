@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Toolbar (we'll put a centered title TextView inside) -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#752B99"
+                android:minHeight="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <!-- centered title -->
+                <TextView
+                    android:id="@+id/toolbar_title_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nari Nexus"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/tagline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="By Her. For Her. With Her."
+                android:textColor="#CE8217"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <!-- Your button grid (kept the same) -->
+            <GridLayout
+                android:id="@+id/featureGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:alignmentMode="alignBounds"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:useDefaultMargins="true">
+
+                <Button
+                    android:id="@+id/btnSwasthya"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:background="@drawable/rounded_button"
+                    android:gravity="center"
+                    android:text="🩺 Swasthya\nHealth Guide"
+                    android:textAlignment="center"
+                    android:textColor="#1D042C" />
+
+                <Button
+                    android:id="@+id/btnMitraMandal"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:background="@drawable/rounded_button"
+                    android:gravity="center"
+                    android:text="💬 Mitra Mandal\nChat Room"
+                    android:textAlignment="center"
+                    android:textColor="#1D042C" />
+
+                <Button
+                    android:id="@+id/btnNariPicks"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:background="@drawable/rounded_button"
+                    android:gravity="center"
+                    android:text="🛍️ Nari Picks\nProduct Recos"
+                    android:textAlignment="center"
+                    android:textColor="#1D042C" />
+
+                <Button
+                    android:id="@+id/btnNewFeature"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:background="@drawable/rounded_button"
+                    android:gravity="center"
+                    android:text="✨ Body Positivity"
+                    android:textAlignment="center"
+                    android:textColor="#1D042C" />
+            </GridLayout>
+
+            <!-- rest of your content (slider, buttons) - keep same IDs -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Motivational Corner"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingBottom="8dp"
+                android:textColor="#6A1B9A" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFFFF"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <HorizontalScrollView
+                    android:id="@+id/imageScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="202dp"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/sliderContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/helplinebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="📞 Helpline Numbers"
+                    android:textColor="#1D042C"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btndiscover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:text="🔍 Discover More"
+                    android:textColor="#1D042C"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/perone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency"
+                    android:backgroundTint="@color/dark_green"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Navigation drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/nav_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

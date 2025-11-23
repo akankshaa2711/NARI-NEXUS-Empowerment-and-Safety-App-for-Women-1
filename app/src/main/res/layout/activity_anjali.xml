@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFF8FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/anjaliImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="center"
+            android:src="@drawable/anjali"
+            android:layout_marginBottom="16dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#F3E5F5"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔥 Anjali Guru is an inspiring acid attack survivor from India who turned her scars into strength. Attacked when she was a teenager, Anjali went through years of surgeries and emotional pain, but she never allowed it to break her spirit.\n\nFrom hiding her face behind scarves to walking confidently with her head held high, Anjali’s journey shows how self-love and courage can heal even the deepest wounds. She began sharing her story to inspire other survivors, advocating for their rights and dignity.\n\nToday, Anjali Guru is a motivational speaker and an advocate for acid attack survivors, working to create a society where beauty is not defined by appearance but by resilience. Her life teaches us that no matter what challenges we face, our scars can become our greatest power."
+                android:textSize="16sp"
+                android:textColor="#4A148C"
+                android:padding="16dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✨ 'Her scars did not define her, her courage did.' ✨"
+            android:textAlignment="center"
+            android:textColor="#6A1B9A"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>
